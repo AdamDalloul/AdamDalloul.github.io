@@ -1,32 +1,32 @@
-// Function to toggle dark mode
 function dark_mode() {
     var element = document.body;
     element.classList.toggle("dark-mode");
-  
-    // Save dark mode setting to localStorage
-    var isDarkModeEnabled = element.classList.contains("dark-mode");
-    localStorage.setItem("darkModeEnabled", isDarkModeEnabled);
+    if (element.classList.contains("dark-mode")) {
+      document.cookie = "mode=dark";
+    } else {
+      document.cookie = "mode=light";
+    }
   }
   
-  // Check if dark mode is enabled in localStorage
-  var isDarkModeEnabled = localStorage.getItem("darkModeEnabled") === "true";
+  window.onload = function() {
+    var mode = getCookie("mode");
+    if (mode == "dark") {
+      document.body.classList.add("dark-mode");
+      document.getElementById("_1st-toggle-btn").querySelector("input[type='checkbox']").checked = true;
+    } else {
+      document.body.classList.remove("dark-mode");
+      document.getElementById("_1st-toggle-btn").querySelector("input[type='checkbox']").checked = false;
+    }
+  };
   
-  // Set dark mode class on body element
-  if (isDarkModeEnabled) {
-    document.body.classList.add("dark-mode");
-  }
-  
-  // Listen for changes to the dark mode setting
-  window.addEventListener("storage", function (event) {
-    if (event.key === "darkModeEnabled") {
-      // Update dark mode setting on all pages
-      var isDarkModeEnabled = event.newValue === "true";
-      var element = document.body;
-      if (isDarkModeEnabled) {
-        element.classList.add("dark-mode");
-      } else {
-        element.classList.remove("dark-mode");
+  function getCookie(name) {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.substring(0, name.length + 1) == (name + "=")) {
+        return cookie.substring(name.length + 1);
       }
     }
-  });
+    return null;
+  }
   
