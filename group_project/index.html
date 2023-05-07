@@ -49,6 +49,41 @@
 
     }    
 
+    .table1 {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+        padding-top: 610px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Style the table headers */
+    .table1 th {
+        background-color: inherit;
+        background-color: #FFEAD0;
+        color: black;
+        font-weight: bold;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #000;
+    }
+
+    .bold_and_highlight {
+        background-color: inherit;
+        background-color: #FFEAD0;
+        color: black;
+        font-weight: bold;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid #000;
+    }
+
+    /* Style the table cells */
+    .table1 td {
+        border: 1px solid #000;
+        padding: 12px;
+    }
+      
     .header3 {
         grid-column: 1;
         grid-row: 4;
@@ -64,14 +99,13 @@
 
     .body_text2 {
         grid-column: 1;
-        grid-row: 4;
-        padding-left: 100px;
+        grid-row: 4;        
     }
 
     .youtube_video {
         grid-column: 1 / span 3;
         grid-row: 4;
-        padding-top: 650px;
+        padding-top: 570px;
         text-align: center;
     }
 
@@ -236,9 +270,8 @@
     </div>
     </div>   
 
-    <div class="grid-item video">
-        
-        <video width="800" height="800" autoplay muted loop>
+    <div class="grid-item video">        
+        <video width="800" height="635" autoplay muted loop>
             <source src="videos/sample_tutor_video.mp4" type="video/mp4">
             <source src="videos/sample_tutor_video.mp4" type="video/ogg">
           Your browser does not support the video tag.
@@ -246,17 +279,47 @@
     </div> 
 
     <div class="grid-item header2">
-        <br><br><br>
+        <br>     
         <h2>Success Stories</h2>
     </div>
     
     <div class="grid-item body_text1">
-        <br><br><br><br><br><br><br><br><br>
+        <br><br><br><br>
         <p>1. John was struggling with math and was at risk of failing his high school class. After enrolling in our tutoring service, he worked with an experienced tutor who helped him catch up on coursework, understand difficult concepts, and improve his grades from a D to a B+.</p>
         <p>2. Maria, an ESL student, had difficulty writing essays in English. Our dedicated tutor helped her improve her grammar and writing skills, enabling her to submit a strong college application essay and gain acceptance to her dream school.</p>
         <p>3. Samantha needed help preparing for the LSAT. With our tutoring program, she worked with a knowledgeable tutor who helped her improve her score by 10 points and gain admission to her top-choice law school. Our test prep tutoring program empowers students to achieve their academic and professional goals.</p>
     </div>    
-        
+    
+    <div class="grid-item table1">
+        <table>
+            <tr>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Tutor</th>
+                <th>Outcome</th>
+            </tr>
+            <tr>
+                <td class="bold_and_highlight">John</td>
+                <td>Math</td>
+                <td>Experienced tutor</td>
+                <td>Improved grades from D to B+</td>
+            </tr>
+            <tr>
+                <td class="bold_and_highlight">Maria</td>
+                <td>English writing</td>
+                <td>Dedicated tutor</td>
+                <td>Improved grammar and writing skills</td>
+            </tr>
+            <tr>
+                <td class="bold_and_highlight">Samantha</td>
+                <td>LSAT test prep</td>
+                <td>Knowledgeable tutor</td>
+                <td>Improved score by 10 points and gained admission to top-choice law school</td>
+            </tr>
+    </table>
+    <br><br><br>
+    </div>
+
     <div class="grid-item header3">
         <hr>        
         <h2>Our Vision</h2>        
@@ -281,7 +344,7 @@
     <div class="grid-item youtube_video">
         <h2>Discover an EPS Alumni</h2>
         <iframe width="896" height="504" src="https://www.youtube.com/embed/c8F8DDHqIkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br>
     </div>
 </div>
 
