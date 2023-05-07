@@ -113,7 +113,7 @@ p {
     font-family: "ivyepic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 div {
@@ -127,14 +127,15 @@ h1 {
     font-family: "ivyepic", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 50px;
+    font-size: 40px;
+    
 }
 
 h2 {
     font-family: "ivyepic", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 hr {
