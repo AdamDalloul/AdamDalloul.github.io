@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">    
+    <script src="java/script.js"></script>
     <style>
     .grid-container {
         display: grid;
@@ -237,7 +238,7 @@
 
     <div class="grid-item video">
         
-        <video width="1000" height="1000" autoplay muted>
+        <video width="800" height="800" autoplay muted loop>
             <source src="videos/sample_tutor_video.mp4" type="video/mp4">
             <source src="videos/sample_tutor_video.mp4" type="video/ogg">
           Your browser does not support the video tag.
@@ -279,7 +280,7 @@
 
     <div class="grid-item youtube_video">
         <h2>Discover an EPS Alumni</h2>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/c8F8DDHqIkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="896" height="504" src="https://www.youtube.com/embed/c8F8DDHqIkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <br><br><br><br><br><br><br><br>
     </div>
 </div>
@@ -316,13 +317,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-function dark_mode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
 </script>
-
 
 </body>
 </html>
