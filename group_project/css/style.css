@@ -191,6 +191,13 @@ ul.nav a:hover {
     /*NEW FEATURE*/
     border-radius: 25px;
 
+    /*NEW FEATURE*/
+    display: flex;
+    /*NEW FEATURE*/
+    align-items: center;
+    /*NEW FEATURE*/
+    justify-content: center;
+
     text-align: center;
     font-size: 25px;
     color: black;
