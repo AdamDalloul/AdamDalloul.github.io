@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #animation_p {
+            animation: move_left_to_right 5s linear infinite
+        }
+
+        @keyframes move_left_to_right {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+        }
+
+        #moving_image {
+            width: 20%;
+            animation: move_then_fade 5s linear forwards;
+        }
+
+        @keyframes move_then_fade {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(-5%);
+        }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 35% 35% auto;
+            grid-gap: 10px;
+        }
+
+        .logo {
+            grid-column: 1;
+            grid-row: 3;
+        }
+    
+        .grid-item{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+    
+        .title {
+            grid-column: 2;
+            grid-row: 3;
+        }
+    
+        .header1 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+
+        }
+        .header2 {
+            grid-column: 1;
+            grid-row: 6;
+        }
+        .image1 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+            position: relative;
+            width: 100%;
+        }
+        .img1 {
+            display: block;
+            height: auto;
+        }
+        .header3 {
+            grid-column: 3;
+            grid-row: 6;
+        }
+        .header4 {
+            grid-column: 2;
+            grid-row: 6;
+        }
+        .image2 {
+            grid-column: 1;
+            grid-row: 7;
+        }
+        .image3 {
+            grid-column: 3;
+            grid-row: 7;
+        }
+        .image4 {
+            grid-column: 2;
+            grid-row: 7;
+        }
+        .story {
+            grid-column: 3;
+            grid-row: 5;
+            font-size: 22px;
+            text-align: center;
+            padding-left: 50px;
+        }
+        .yashbio {
+            grid-column: 1;
+            grid-row: 8;
+        }
+        .adambio {
+            grid-column: 3;
+            grid-row: 8;
+        }
+        .rohanbio {
+            grid-column: 2;
+            grid-row: 8;
+        }
+        p {
+            letter-spacing: 1px;
+        }
+        .videodescription {
+            grid-column: 1 / span 3;
+            grid-row: 9;
+        }
+        .video1 {
+            grid-column: 1 / span 3;
+            grid-row: 10;
+        }
+        .overlay {
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            /*NEW FEATURE*/
+            transition: .5s ease;
+            background-color: burlywood;
+        }
+        /*NEW FEATURE*/
+        .image1:hover .overlay {
+            opacity: 0.6;
+        }
+        .text {
+            color: black;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*NEW FEATURE*/
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="why.html">Why Us?</a></li>
+        <li class="active"><a href="about.html">About</a></li>
+    </ul>
+    <br><br>
+    <div class="grid-container">
+        <div class="grid-item logo"><img src="images/logo.png" alt="Logo" id="moving_image" style="width: 100%"></div>
+        <div class="grid-item title"><h1>Who are we?</h1></div>
+        <div class="grid-item header1"><h2>How It All Started</h2></div>
+        <div class="grid-item story"><p>At Eastside Preparatory School, three high school students named Yash, Adam, and Rohan found themselves immersed in their studies and discovering a shared passion for education. They often helped their friends and classmates with difficult subjects, and their ability to explain concepts in a relatable way was well-known among their peers. They realized that they all derived immense satisfaction from helping others succeed academically and wanted to expand their impact beyond their immediate circle of friends. Inspired by their conversations, Yash, Adam, and Rohan decided to start a tutoring business together. </p></div>
+        <div class="grid-item image1">
+            <img src="images/tutoring_21.png" alt="Study Group" style="width: 100%" class="img1">
+            <div class="overlay">
+                <div class="text">Students working together on problems</div>
+            </div>
+        </div>            
+        <div class="grid-item header2"><h2>Yash Kshirsagar</h2></div>
+        <div class="grid-item image2"><img src="images/yash.jpg" alt="Yash Picture" style="width: 85%"></div>
+        <div class="grid-item yashbio"><p>Yash Kshirsagar is a dedicated and accomplished high school student with a passion for education and helping others succeed. With a strong academic background and a natural aptitude for learning, Yash has embarked on a journey to share their knowledge and assist fellow students in achieving their academic goals.
+            As an aspiring tutor, Yash has already made a positive impact by offering their assistance to friends and classmates, providing guidance and support in various subjects. His patient and empathetic nature, coupled with their ability to break down complex concepts into simpler, more manageable parts, has proven invaluable in helping others grasp challenging topics.
+            Yash's own academic achievements are a testament to their commitment to excellence. Maintaining an impressive track record as a high-performing student, he has demonstrated their proficiency in a wide range of subjects. This firsthand experience enables Yash to relate to the struggles that students face, helping him navigate through difficult material and develop effective study strategies.
+            He understands that each student is unique, with their own learning style and pace, and requires a unique tutoring approach. </p></div>
+        <div class="grid-item header3"><h2>Adam Dalloul</h2></div>
+        <div class="grid-item image3"><img src="images/adam.jpg" alt="Adam Picture" style="width: 100%"></div>
+        <div class="grid-item adambio"><p>Adam Dalloul is a motivated and talented high school student who is passionate about education and empowering others to reach their full potential. With a strong academic foundation and a genuine desire to make a difference, Adam has set out on a mission to provide exceptional tutoring services to fellow students. 
+            As a dedicated learner, Adam understands the challenges that students face in grasping complex concepts and navigating through rigorous coursework. Drawing from his own experiences, he has developed effective study strategies and techniques that have yielded outstanding results. Adam's ability to break down difficult concepts into manageable parts and provide clear explanations enables him to connect with students and help them overcome academic hurdles.</p></div>
+        <div class="grid-item header4"><h2>Rohan Balakrishnan</h2></div>
+        <div class="grid-item image4"><img src="images/rohan.jpeg" alt="Rohan Picture" style="width: 90%"></div>
+        <div class="grid-item rohanbio"><p>Rohan Balakrishnan is a motivated and accomplished high school student with a genuine passion for education and a strong desire to help others excel. With a solid academic foundation and a natural ability to connect with students, Rohan is dedicated to providing exceptional tutoring services.
+            As an enthusiastic learner, Rohan understands the challenges students face when tackling complex subjects and overcoming academic hurdles. Drawing from personal experiences, he has developed effective learning strategies that yield remarkable results. Rohan excels at breaking down difficult concepts into easily digestible parts and uses his patient and approachable nature to establish a personal connection with students, guiding them through their educational journey.
+            Rohan's commitment to academic excellence is evident in their outstanding achievements. Consistently performing at a high level across various subjects, he possesses a deep understanding and mastery of the material. This expertise allows Rohan to effectively support and mentor students, helping them develop strong study habits, critical thinking skills, and problem-solving abilities.</p></div>
+        <div class="grid-item videodescription"><p>Our mission and vision that we share with EPS:</p></div>
+        <div class="grid-item video1"><iframe width="560" height="315" src="https://www.youtube.com/embed/3liFOMdqotM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    </div>
+
+    <p class="footer">This page was created by Yash</p> 
+</body>
+</html>

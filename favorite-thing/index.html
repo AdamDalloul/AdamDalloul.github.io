@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Thing</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        th {
+            background-color: gray;
+            color: black;            
+        }
+        
+        #container {
+            overflow: hidden;  
+        }
+
+        #highlighted-text {
+            background-color: white;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder; 
+            letter-spacing: 5px;    
+            animation: move-left-to-right_and_color_change 13s linear infinite;                    
+        }  
+
+        @keyframes move-left-to-right_and_color_change {
+        0% {
+            transform: translateX(-100%);
+         }
+        100% {
+            transform: translateX(100%);
+         }
+
+        from {
+            color: #6666ff;
+        }
+        10% {
+            color: #0099ff;
+        }
+        50% {
+            color: #00ff00;
+        }
+        75% {
+            color: #ff3399;
+        }
+        100% {
+            color: #6666ff;
+        }
+        }
+
+        .list {
+            font-size: 18px;
+            font-weight: lighter;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .text-Golf {
+            font-weight: bold;
+            color: #0099ff;
+        }
+
+        .text-team {
+            font-style: italic;
+
+        }
+
+        #title-text {
+            font-weight: bolder;
+            font-size: larger;
+            text-decoration: underline;
+        }
+        
+        #EPS-logo {
+            width: 80px;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            animation: move-left-to-right-logo 5s linear forwards;            
+        }
+
+        @keyframes move-left-to-right-logo {
+        0% {
+            transform: translateX(-100%);
+         }
+        100% {
+            transform: translateX(100%);
+            opacity: 0;
+         }
+        }
+
+        html * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(222, 253, 235);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>My Favorite School Related Thing:</h1>
+    <h2 style="text-align: center;">EPS Golf! Go Eagles! &#129413</h2>
+    <div id="container"> 
+    <p id="highlighted-text">Signup next year for the EPS Golf team!</p>
+    </div>
+    <img src="images/EPS-Eaglepng.png" alt="EPS Eagle" id="EPS-logo">
+
+    <p>One of my favorite things about school is playing <span class="text-Golf">Golf </span> with my <span class="text-team">team</span>.</p> 
+
+    <p>This is why I love EPS Golf:</p>
+    <div class="list">
+        <ol>
+            <li>It's a great way to meet new people.</li>
+            <li>It's a great way to improve your golfing skills.</li>
+            <li>It's a great way to support your school team!</li>
+    
+        </ol>
+    </div>
+    
+
+    <p>You can find more information about the EPS Golf Team <a href="https://www.eastsideprep.org/athletics/upper-school/" target="_blank"> HERE.</a></p>
+    
+    <hr />
+    
+    <p style="font-size: larger; font-weight: bold; text-decoration: underline;">These are some good resources to learn more about Golf:</p>
+    <a href="https://broadrungolf.com/tips/how-to-learn-to-play-golf/#:~:text=How%20to%20learn%20to%20play%20golf%3F%201%20Start,follow%20through%20with%20your%20swing.%20...%20More%20items" target="_blank" >How to Play Golf</a><br>
+    <a href="https://www.golfdigest.com/gallery/golf-beginners-tips" target="_blank" >Golf for Beginners</a><br> <br>
+
+ 
+    <img src="images/golf.png" alt="Man Swinging Golf Club" style="width:20%">
+    <img src="images/golf bag.png" alt="Golf Bag" style="width:6.6426%"><br>
+    
+    <!-- Button: -->
+    <form action="https://www.dickssportinggoods.com/p/top-flite-senior-2021-xl-13-piece-complete-set-graphite-21tflmtpflt21xlmrseta/21tflmtpflt21xlmrseta?camp=CSE:DSG_92700073002198108_pla_pla-4583176821009046_58700008027834430_71700000100423434&gclid=eb33fc1ab59a1d2f4c68980972853b7b&gclsrc=3p.ds&msclkid=eb33fc1ab59a1d2f4c68980972853b7b" method="get" target="_blank">
+        <button type="submit">Click Here to Buy a Good Beginner Friendly Golf Set</button><br>
+    </form>
+    <br> <br> 
+    
+
+    <!--New tags: Table, YouTube Integration, Google Maps-->
+
+    
+    <table>
+        <tr>
+            <th>Scottie Scheffler</th>
+            <th>Tom Hoge</th>
+            <th>Max Homa</th>
+        </tr>
+        <tr>
+            <td>Perfect Swing</td>
+            <td>Amazing Putting</td>
+            <td>Great Long Drive</td>
+        </tr>
+        <tr>
+            <td>9.8/10</td>
+            <td>8.7/10</td>
+            <td>9.2/10</td>
+        </tr>
+
+        <hr>
+
+        <p id="title-text">Getting Started with Golf:</p>
+
+        <p>This video should get you started with playing Golf in no time.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CN3ThL8DgFM?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        <br> <br>
+        
+        <p>Here's a great, beginner-friendly course that you should consider visiting. It's also our home course!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.4749491347816!2d-122.15405168469685!3d47.65576909257384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906d441ff622d3%3A0x674fb4f6e6569f39!2sBellevue%20Golf%20Course!5e0!3m2!1sen!2sus!4v1679591768015!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+
+        <br> <br>
+
+    <p>Consider checking out some popular Golf players and their ratings below:</p> <br>
+    </table>
+
+    <!-- Email Feature -->
+    <br> <br> <br> <br> <a style="font-size: smaller;" href="mailto:adalloul@eastsideprep.org">Send me an email for more information</a> <br> <br>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    background-color: grey;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 35% auto;
+    grid-gap: 10px;
+}
+
+.grid-item{
+    background-color: lightblue;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.navmenu {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    font-size: 18px;
+}
+
+.main-image {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+
+.main1 {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.main2 {
+    grid-column: 1 / span 2;
+    grid-row: 5;
+}
+
+.support1 {
+    grid-column: 1;
+    grid-row: 4;
+    background-color: red;
+}
+
+.support2 {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: red;
+}
+
+.sidenav {
+    background-color: darkred;
+    grid-column: 3;
+    grid-row: 3 /span 3;
+}
+
+.nav {
+    list-style: none;    
+    background-color: darkgrey;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;   
+}
+
+ul.nav li {    
+    float: left;    
+}
+
+ul.nav li a{
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+ul.nav a:hover {
+    background-color: #7e90e6;
+    color: white;
+}
+
+.active {
+    background-color: grey;
+}
+
+
+
+
+
+.grid-item2 {
+    font-size: 17px;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 30px;
+    background-color: darkgrey;
+    font-weight: bolder;
+}
+
+.navmenu2 {
+    grid-column: 1 /span 3;
+    grid-row: 2;
+    font-size: 18px;
+}
+
+.main-image2 {
+    grid-column: 1 /span 3;
+    grid-row: 3;
+}
+
+.main3 {
+    grid-column: 1 / span 2;
+    grid-row: 4;
+}
+
+.main4 {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+.support3 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.support4 {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.sidenav2 {
+    background-color: darkgrey;
+    grid-column: 3;
+    grid-row: 4 /span 3;
+}
+
+.body2 {
+    background-color: lightgrey;
+}
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}

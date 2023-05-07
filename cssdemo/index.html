@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #blue-text{
+            color: blue;
+        }
+        #red-text{
+            color: red;
+        }
+        #multi-text{
+            color: green;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        h1{
+            color: mintcream;
+            background-color: darkblue;
+        }
+        h2{
+            color: crimson;
+        }
+
+        .special{
+            color: darkgreen;
+            font-size: x-large;
+            background-color: darkslateblue;
+        }
+
+        .span1 {
+            font-size: 100px;
+        }
+
+        .centered-img{
+            display: block;
+            margin: 10px auto;
+            width: 50%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+
+
+    <h1>Today we will learn how to use some CSS!</h1>
+    <h2>1. This is how we add style with inline CSS</h2>
+    <p>This paragraph has no style</p>
+    <p style="color:seagreen;">This is a seagreen color paragraph</p>
+    <p style="color:rgb(63, 191, 37); font-size: 50px;">This is an RGB color and font size 50px paragraph</p>
+    <p style="color: red; background-color: coral; font-size: 24px; text-align: center;">This is a centered, red, font size 24px, and coral background paragraph</p>
+    <h2>This is how we add style with internal CSS</h2>
+    <p id="blue-text">I want this text to be blue</p>
+    <p id="red-text">This one to be red</p>
+    <p id="multi-text">This one to be green, 24px, and right aligned</p>
+
+    <h2>This is how we use divs and spans </h2>
+    <div class="special">
+        <h3>This is a div example</h3>
+        <p>This paragraph is part of a div. And <span class="span1">this is a span inside of my div</span></p>
+        <p>This paragraph is still part of a div</p>
+        <h4>h4 just for kicks</h4>
+
+    </div>
+    
+    <img src="image/CSS_logo.png" alt="This should be an image" class="centered-image">
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 35% 35% auto;
+            grid-gap: 10px;
+        }
+
+        .grid-item{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .title {
+            grid-column: 2;
+            grid-row: 3;
+        }   
+        
+        .header1 {
+            grid-column: 1 / span 2;
+            grid-row: 4;
+        }
+        .header2 {
+            grid-column: 3;
+            grid-row: 4;
+        }
+        .header3 {
+            grid-column: 1;
+            grid-row: 6;
+        }
+        .header4 {
+            grid-column: 3;
+            grid-row: 12;
+        }
+        .sat {
+            grid-column: 2;
+            grid-row: 5;
+            background-color: burlywood;
+            /*NEW FEATURE*/
+            border-radius: 12px;
+        }
+        .image1 {
+            grid-column: 1;
+            grid-row: 5;
+            background-color: burlywood;
+            width: 100%;
+            border-radius: 12px;
+        }
+        .act {
+            grid-column: 3;
+            grid-row: 5 / span 6;
+            background-color: burlywood;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="programs.html">Programs</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="why.html">Why Us?</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="grid-container">
+        <div class="grid-item title"><h1>Our Programs</h1></div>
+        <div class="grid-item header1"><h2>SAT Tutoring</h2></div>
+        <div class="grid-item sat"><p>Are you a high school student preparing to take the SAT? Look no further than the "Elevate SAT Prep Program" for comprehensive and effective tutoring designed to maximize your potential and boost your scores.
+            At Elevate, we understand the importance of achieving your best results on the SAT. Our dedicated team of experienced tutors is committed to providing personalized guidance and support to help you succeed. With our proven strategies and targeted approach, we'll equip you with the skills and confidence you need to excel on test day.</p></div>
+        <div class="grid-item image1"><img src="images/sat.jpg" alt="SAT Picture" style="width: 100%"></div>
+        <div class="grid-item header2"><h2>ACT Tutoring</h2></div>
+        <div class="grid-item act"><img src="images/act.png" alt="ACT Picture" style="width: 100%"><p>Our team of experienced tutors includes certified teachers, test-prep experts, and college admissions professionals who have a proven track record of helping students improve their ACT scores. We offer personalized one-on-one tutoring sessions as well as group classes, depending on your needs and preferences.
+            Our tutoring program is based on a comprehensive curriculum that covers all the sections of the ACT, including English, Math, Reading, Science, and Writing. 
+            </p></div>
+        <div class="grid-item header3"><h2>Math Tutoring</h2></div>
+        <div class="grid-item header4"><h2>English Tutoring</h2></div>
+    </div>
+
+    <p class="footer">This page was created by Yash</p>    
+</body>
+</html>
