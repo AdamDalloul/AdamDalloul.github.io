@@ -33,10 +33,6 @@
             grid-column: 3;
             grid-row: 4;
         }
-        .header3 {
-            grid-column: 1;
-            grid-row: 6;
-        }
         .sat {
             grid-column: 2;
             grid-row: 5;
@@ -56,10 +52,44 @@
         }
         .act {
             grid-column: 3;
-            grid-row: 5 / span 6;
+            grid-row: 5 / span 4;
             background-color: burlywood;
             border-radius: 12px;
             box-shadow: 5px 12px;
+        }
+        .math {
+            grid-column: 1 / span 2;
+            grid-row: 7;
+            background-color: burlywood;
+            border-radius: 12px;
+            box-shadow: 5px 12px;
+        }
+        .pros {
+            grid-column: 1 / span 3;
+            grid-row: 10;
+        }
+        .table1 {
+            grid-column: 1 / span 3;
+            grid-row: 11;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+            width: 25%;
+        }
+        th {
+            background-color: burlywood;
+            font-weight: bold;
+        }
+        .checkmark::before {
+            content: '\2713';
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: burlywood;
+            margin: auto;
         }
     </style>
 </head>
@@ -87,9 +117,44 @@
         <div class="grid-item act"><img src="images/act.png" alt="ACT Picture" style="width: 100%"><p>Our team of experienced tutors includes certified teachers, test-prep experts, and college admissions professionals who have a proven track record of helping students improve their ACT scores. We offer personalized one-on-one tutoring sessions as well as group classes, depending on your needs and preferences.
             Our tutoring program is based on a comprehensive curriculum that covers all the sections of the ACT, including English, Math, Reading, Science, and Writing. 
             </p></div>
-        <div class="grid-item header3"><h2>Math Tutoring</h2></div>
+        <div class="grid-item math"><h2>Math Tutoring</h2><p>Are you a student looking to excel in math? Look no further than the "Elevate Education Tutoring Program" for comprehensive and effective math tutoring designed to help you master concepts, build problem-solving skills, and achieve success.
+            At Elevate, we understand the challenges students often face when it comes to math. Our experienced tutors are dedicated to providing personalized guidance and support to help you develop a strong foundation in math and reach your academic goals.
+            </p></div>
+        <div class="grid-item pros"><h2>Pros and Cons:</h2></div>
+        <div class="grid-item table1">
+            <table>
+                <tr> 
+                    <th>Factors</th>
+                    <th>SAT</th>
+                    <th>ACT</th>
+                    <th>Math</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <th>Cost</th>
+                    <td><div class="checkmark"></div></td>
+                    <td></td>
+                    <td><div class="checkmark"></div></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Time</th>
+                    <td></td>
+                    <td><div class="checkmark"></div></td>
+                    <td></td>
+                    <td><div class="checkmark"></div></td>
+                </tr>
+                <tr>
+                    <th>Practices</th>
+                    <td></td>
+                    <td><div class="checkmark"></div></td>
+                    <td><div class="checkmark"></div></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </div>
-    
+
     <p class="footer">This page was created by Yash</p>    
 </body>
 </html>
