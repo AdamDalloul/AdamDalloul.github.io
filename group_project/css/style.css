@@ -3,6 +3,11 @@ body {
     background-color: #4C4C4C;      
 }
 
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
 .button {          
     scale: 50%;
     /*NEW FEATURE*/
@@ -14,11 +19,6 @@ body {
     right: 0;
       
 }
-
-.dark-mode {
-    background-color: black;
-    color: white;
-  }
 
  .toggle-btn {
     position: relative;
@@ -113,7 +113,7 @@ p {
     font-family: "ivyepic", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 div {
