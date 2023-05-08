@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Mess Around</title>
+    <style>
+        #text_outline {
+            border: 1px solid red;
+            outline-style: dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's learn JavaScript</h1>
+
+    <h2>How do we do onclick events and alerts on an anchor.</h2>
+    <a href="https://www.youtube.com/" target="_blank" onclick="alert('Warning you are about to enter an external site!')">YouTube</a>
+
+
+    <hr>
+    <h2>How do we display and hide text?</h2>
+    <h2>What's my secret identity?</h2>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Superman'; document.getElementById('secret').style.display='block' ">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+    <hr>
+    <h2>How do we change an image with JavaScript?</h2>
+    <img src="images/pic_bulboff.gif" alt="Bulb Off" id="myImage">
+    <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Bulb On</button>
+    <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Bulb Off</button>
+    <hr>
+    <h2>How do we change CSS styles with a button?</h2>
+    <p id="alice">Hi. I am Alice.</p>
+    <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize= '5px'">Cake - Eat Me</button>
+    <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize= '50px'">Potion - Drink Me</button>
+    <button onclick="document.getElementById('alice').style.color='black'; document.getElementById('alice').style.fontSize= '12px'">Return to Defualt</button>
+
+    <hr>
+    <h2>How do we return user input with a function?</h2>
+    <button onclick="askName()">What's your name?</button>
+    <p id="ask-name"></p>
+
+    <h2>Let's change the background color!</h2>
+    <button onclick="changeDarkMode()">Change to Dark Mode</button>
+    <button onclick="changeLightMode()">Change to Light Mode</button>
+
+
+    <h2>Let's change the outline of the text!</h2>
+    <p id="text_outline">This is our sample text</p>
+    <button onclick="changeOutlineGreen()">Change Outline Color to Green</button>
+    <button onclick="changeOutlineBlack()">Change Outline Color to Black</button>
+
+    <script>
+        function askName() {
+            let nameParagraph = document.getElementById("ask-name");
+            let name = prompt("What is your name?");
+            // now let's decide what to do
+            if (name === "Superman") {
+                nameParagraph.innerHTML = "Welcome to Superman's house, sir."
+                
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you."
+
+            }   
+        }
+
+        function changeDarkMode() {
+            document.body.style.backgroundColor = "grey";
+
+        }
+
+        function changeLightMode() {
+            document.body.style.backgroundColor = "white";
+
+        }
+
+        function changeOutlineGreen() {
+             document.getElementById("text_outline").style.outlineColor = "green";
+        }
+
+        function changeOutlineBlack() {
+            document.getElementById("text_outline").style.outlineColor = "black";
+        }
+    </script>
+
+
+</body>
+</html>
