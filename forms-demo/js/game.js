@@ -80,7 +80,7 @@ function truth_and_lie() {
         triviaAnswer.style.color = '#FF0000'; //red
     }
     else if (librarianSelected) {
-        triviaAnswer.innerHTML = fname + " you got it right. Who wants to be a librarian when they grow up?";
+        triviaAnswer.innerHTML = fname + " you got it right. Who wants to be a Librarian when they grow up?";
         triviaAnswer.style.color = '#04b976'; //green
     }
     else if (lebanonSelected) {
