@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Demo</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark">
+    <!--Bootstrap container for content and layout control-->
+    <div class="container-fluid bg-dark text-white">
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/home-page.png" alt="Home Page Button" style="width: 40px; padding-left: 10px;">
+                </a>
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                        <li clas="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+        </nav>
+
+        <!--Bootstrap Carousel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+            <!-- First Slide -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/nature-wallpaper.png" alt="Nature Wallpaper with Mountains" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Beatiful Mountains</h3>
+                        <p>Just stunning.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/nature-wallpaper_2.png" alt="Nature Wallpaper with Lakes" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Beatiful Lake</h3>
+                        <p>Awesome!</p>
+                    </div>
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="images/nature-wallpaper_3.png" alt="Nature Wallpaper with Huge Lake" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h3>Beatiful Lake with Mountains</h3>
+                        <p>How nice!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>     
+        </div>
+
+    </div>
+
+<!--Let's add a bootstrap grid-->
+<div class="row text-white text-center" style="scale: 90%;">
+    <div class="col-md-3">
+        <h2>Bootstrap is for HTML</h2>
+        <p>HTML is awesome!</p>
+        <a href="https://www.w3schools.com/html/" target="_blank" class="btn btn-primary" role="button">More on HTML</a>
+    </div>    
+    <div class="col-md-2">
+        <h2>Create Websites</h2>
+        <p>Coding is great!</p>
+        <a href="https://blog.hubspot.com/website/how-to-code-a-website#:~:text=How%20to%20Code%20a%20Website%201%201.%20Pick,a%20responsive%20website%20or%20a%20static%20website.%20" target="_blank" class="btn btn-primary" role="button">Learn Code</a>
+    </div>
+    <div class="col-md-2">
+        <h2>Bootstrap is for CSS</h2>
+        <p>CSS is awesome!</p>
+        <a href="https://www.w3schools.com/Css/" target="_blank" class="btn btn-primary" role="button">More on CSS</a>
+    </div>
+    <div class="col-md-2">
+        <h2>Learn Web design</h2>
+        <p>Web design is cool!</p>
+        <a href="https://www.thoughtco.com/web-design-basics-4140405#:~:text=Learning%20the%20Basics%20of%20Web%20Design%201%20Elements,the%20fun%20part%20of%20building%20web%20pages.%20" target="_blank" class="btn btn-primary" role="button">Extra info</a>
+    </div>
+    <div class="col-md-3">
+        <h2>Bootstrap is for JavaScript</h2>
+        <p>JavaScript is awesome!</p>
+        <a href="https://www.w3schools.com/js/DEFAULT.asp" target="_blank" class="btn btn-primary" role="button">More on JavaScript</a>
+    </div>
+</div>
+
+<div class="container p-5 m-5 border text-white text-center">
+    <h2>Please consider learning Web Design!</h2>
+    <br>
+    <p>Web design is a crucial aspect of building a website as it is not just about making things look pretty, but about creating a user experience that is intuitive and effective. Learning about web design is important for several reasons, such as creating a website that is easy to navigate, establishing a strong brand identity, increasing engagement and conversions, and giving greater control over your website. With a well-designed website, you can guide users to the information they need quickly, reflect the values and personality of your brand, and make informed decisions about the layout and elements of your site. </p>
+</div>
+
+<div class="text-center">
+    <div class="toast show p-5 m-5 mx-auto">
+      <div class="toast-header">
+        This website was created by Adam
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body">
+        I hope you enjoyed your time here.
+      </div>
+    </div>
+</div>
+
+   
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
