@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">       
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% auto;
+        grid-gap: 10px;
+    } 
+
+    .map {
+        grid-column: 2;
+        grid-row: 2;
+    }   
+
+    .map_text {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .video {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .video_text {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+
+    .text_box1 {        
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .img1 {
+        grid-column: 2 / span 2;
+        grid-row: 3;
+    }
+
+    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<body>   
+    <!--Bootstrap container for content and layout control-->
+        <nav class="navbar navbar-expand-sm bg-primary navbar-dark text-bg-light bg-dark bg-opacity-50">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/renewal_food_bank_logo.png" alt="Home Page Button" style="width: 150px; padding-left: 10px;">
+                </a>
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="about.html" style="color: black;">About</a></li>
+                            <li clas="nav-item"><a class="nav-link" href="team.html" style="color: black;">Our Team</a></li>
+                            <li clas="nav-item"><a class="nav-link" href="give_help.html" style="color: black;">Give Help</a></li>
+                            <li clas="nav-item"><a class="nav-link" href="help.html" style="color: black;">Let Us Help</a></li>
+                            <li clas="nav-item"><a class="nav-link" href="contact.html" style="color: black;">Contact</a></li>
+                        </ul>
+                    </ul>
+                </div>
+        </nav>
+
+     <!--Bootstrap Carousel-->
+     <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+      <!-- First Slide -->
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="images/wheat.png" alt="Wheat" class="d-block w-100">
+              <div class="carousel-caption">
+                  <h3>Our Wheat Crops</h3>
+                  <p>Just stunning.</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+              <img src="images/renewal_food_bank.png" alt="Renewal Food Bank" class="d-block w-100">
+              <div class="carousel-caption">
+                  <h3>Our Primary Location</h3>
+                  <p>Come visit us!</p>
+              </div>
+          </div>
+
+          <div class="carousel-item">
+              <img src="images/renewal_food_bank_2.png" alt="Renewal Food Bank #2" class="d-block w-100">
+              <div class="carousel-caption">
+                  <h3>Enjoy our food!</h3>
+                  <p>How nice!</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </button>     
+  </div>
+
+<br>
+<h2 style="text-align: center;">Feeding the hungry in East King County in a caring environment of dignity and respect</h2>
+
+<div class="grid-container">
+<div style="padding-left: 200px; padding-top: 100px;" class="grid-container map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.9168546170463!2d-122.14224172340907!3d47.62774747119183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906da62af193a1%3A0x92f095438cf37335!2sHighland%20Covenant%20Church!5e0!3m2!1sen!2sus!4v1684860303768!5m2!1sen!2sus" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<div class="map_text" style="padding-left: 50px; padding-top: 100px; font-size: 15px;">
+<h1>Join us any time!</h1>
+<hr>
+<p style="font-weight: bold;">Hours:</p>
+<p>Mondays: 12:00PM to 3:00PM</p>
+<p>Tuesdays: 4:00PM to 6:30PM</p>
+<p>Wednesdays: 10:00AM to 1:00PM</p>
+<br>
+<p style="font-weight: bold;">Contact Us</p>
+<p>Phone: (425) 736-8132</p>
+<p>Email: director@renewalfoodbank.org</p>
+<p>Address: 15022 NE Bel-Red Road, Bellevue, 98007</p>  
+</div>
+
+    <div class="grid-item video" style="padding-left: 25px;">    
+        <!--NEW FEATURE-->    
+        <video width="700" height="800" autoplay muted loop>
+            <source src="videos/renewal_food_bank_intro_video.mp4" type="video/mp4">
+            <source src="videos/renewal_food_bank_intro_video.mp4" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+    </div> 
+
+<div class="video_text" style="padding-top: 220px; padding-left: 350px; padding-right: 20px;">
+    <h1>Come on in!</h1>
+    <hr>
+    <p>We've modified our distribution process to maintain physical distancing and minimize food handling while allowing indoor shopping!</p>
+    <ul>
+    <li>Hand sanitizers at the door.  Masks are optional.</li>  
+    <li>Numbers are distributed 30 mins before opening</li>
+    <li>Receive a color-coded shopping basket according to the number of people in your family.</li>
+    <li>Shop our aisles while maintaining social distance.</li>
+    <li>Fresh fruits and vegetables, proteins and bread are picked with volunteer support</li>
+    <li>Pack your own bags at sanitized tables</li>
+    <li>Come once a week!</li>   
+    </ul>    
+</div>
+
+
+<div class="text_box1" style="padding-top: 750px; padding-left: 50px;">
+<h1>How we keep you safe:</h1>    
+<ul>
+<li>Telling volunteers to stay home if they aren’t feeling well</li>
+<li>Encouraging volunteers to wash their hands thoroughly and frequently and to use the provided hand sanitizers</li>
+<li>Regularly sanitizing frequently touched surfaces and objects</li>
+<li>Indoor seating is temporarily unavailable due to pandemic precautions.</li>
+</ul>  
+</div>
+
+<img src="images/person_shopping.png" alt="Shopper" class="img1" style="padding-left: 300px; padding-top: 700px; width: 800px;">
+
+</div>
+<a class="button" href="https://www.paypal.com/donate?hosted_button_id=FBKAHFCMF2BEG" target="_blank" style="position: absolute; top: 6%; right: 20px; transform: translateY(-50%);">Donate</a>
+
+<br><br><br><br>
+
+<footer>
+  <div class="footer-container">
+    <div class="social-media">
+      <a href="https://www.youtube.com/channel/UCW7UONilE2fZZ1XTY996dPw" target="_blank">
+        <img src="images/youtube-logo.png" alt="YouTube Logo" width="25px">
+      </a>
+      <a href="https://www.facebook.com/RenewalFoodBank" target="_blank">
+        <img src="images/facebook-logo.png" alt="Facebook Logo" width="15px">
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
