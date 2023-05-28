@@ -10,7 +10,6 @@
     
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <style>
       .grid-container {
         display: grid;
@@ -35,7 +34,22 @@
         text-align: center;                   
       }
 
+      .facebook-posts {
+        grid-column: 1;
+        grid-row: 3;
+        padding-top: 85px;
+        scale: 80%;
+        text-align: center;                
+      }
 
+      .youtube-channel {
+        grid-column: 3;
+        grid-row: 3;
+        scale: 80%;
+        position: relative;
+        height: 50px;      
+        margin-top: 125px;
+      }  
     </style>
 </head>
 <body>
@@ -58,60 +72,74 @@
         </div>
     </nav>
 
-    <div class="grid-container">
-        <div class="grid-item page-header">
-            <img src="images/wheat.png" alt="Wheat" class="header-image-styling">
-            <h1 class="header-styling">Get in Touch</h1>
-        </div>
+<div class="grid-container">
+    <div class="grid-item page-header">
+        <img src="images/wheat.png" alt="Wheat" class="header-image-styling">
+        <h1 class="header-styling">Get in Touch</h1>
+    </div>
+    
+    <div class="reach_our_office">
+      <br><br><br><br>
+        <h1>Reach Our Office</h1>
+        <hr>            
+
+      <div style="padding-left: 10px;">
+
+        <!-- Used to Highlight and scroll to the text (location-section id) -->
+        <div id="location-section"> 
+        <p style="font-weight: bold; font-size: large;">Our Location:</p>            
+        <p>Highland Covenant Church</p>
+        <p >15022 Bel-Red Road</p>
+        <p>Bellevue, Washington 98007</p>
+        <p style="font-size: 12.5px; margin: 0; margin-left: 5px;">*Parking is available in lots at either end of the church.</p>
+        <p style="font-size: 12.5px; margin: 0; margin-left: 5px;">*The entrance to our space is off of NE 20th St.</p>
+
         
-        <div class="reach_our_office">
-          <br><br><br><br>
-            <h1>Reach Our Office</h1>
-            <hr>            
-
-          <div style="padding-left: 10px;">
-
-            <!-- Used to Highlight and scroll to the text (location-section id) -->
-            <div id="location-section"> 
-            <p style="font-weight: bold; font-size: large;">Our Location:</p>            
-            <p>Highland Covenant Church</p>
-            <p >15022 Bel-Red Road</p>
-            <p>Bellevue, Washington 98007</p>
-            <p style="font-size: 12.5px; margin: 0; margin-left: 5px;">*Parking is available in lots at either end of the church.</p>
-            <p style="font-size: 12.5px; margin: 0; margin-left: 5px;">*The entrance to our space is off of NE 20th St.</p>
-
-            
-            <br>
-            <p style="font-weight: bold; font-size: large;">Hours:</p>
-            <p>Mondays:  12:00PM to 3:00PM</p>
-            <p>Tuesdays: 4:00PM to 6:30PM</p>
-            <p>Wednesdays:  10:00AM to 1:00PM</p>
-            </div>
-            </div> 
+        <br>
+        <p style="font-weight: bold; font-size: large;">Hours:</p>
+        <p>Mondays:  12:00PM to 3:00PM</p>
+        <p>Tuesdays: 4:00PM to 6:30PM</p>
+        <p>Wednesdays:  10:00AM to 1:00PM</p>
         </div>
+        </div> 
+    </div>
 
-        <div style="padding-left: 200px; padding-top: 100px;" class="grid-item map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d672.2312878342047!2d-122.1400219707684!3d47.627586198699134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906da62c1160b3%3A0xc92d1adff761986f!2s15022%20Bel-Red%20Rd%2C%20Bellevue%2C%20WA%2098007!5e0!3m2!1sen!2sus!4v1684966910644!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
+    <div style="padding-left: 200px; padding-top: 100px;" class="grid-item map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d672.2312878342047!2d-122.1400219707684!3d47.627586198699134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906da62c1160b3%3A0xc92d1adff761986f!2s15022%20Bel-Red%20Rd%2C%20Bellevue%2C%20WA%2098007!5e0!3m2!1sen!2sus!4v1684966910644!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-      <div class="grid-item connect">
-        <br><br><br><br>
-        <h1>Connect With Us</h1>
-       <hr>
-       <div style="padding-left: 10px;">
-        <!-- Used to Highlight and scroll to the text (location-section id number 2) -->
-        <div id="location-section2">  
-       <p><span style="font-weight: bold;">Phone:</span> (425) 736-8132</p>
-       <p><span style="font-weight: bold;">Volunteering Opportunities:</span><a href="mailto:director@renewalfoodbank.org?subject=Volunteering%20Opportunities"> director@renewalfoodbank.org</a></p>
-       <p><span style="font-weight: bold;">Executive Director (Phillip Peters):</span><a href="mailto:director@renewalfoodbank.org"> director@renewalfoodbank.org</a></p>
-       <p style="font-weight: bold;">Mailing Address:</p>
-       <p>12819 SE 38th St, PMB 241</p>
-       <p>Bellevue, WA 98006</p>
-      </div>
-      </div>
+    <div class="grid-item connect">
+      <br><br><br><br>
+      <h1>Connect With Us</h1>
+      <hr>
+      <div style="padding-left: 10px;">
+      <!-- Used to Highlight and scroll to the text (location-section id number 2) -->
+      <div id="location-section2">  
+      <p><span style="font-weight: bold;">Phone:</span> (425) 736-8132</p>
+      <p><span style="font-weight: bold;">Volunteering Opportunities:</span><a href="mailto:director@renewalfoodbank.org?subject=Volunteering%20Opportunities"> director@renewalfoodbank.org</a></p>
+      <p><span style="font-weight: bold;">Executive Director (Phillip Peters):</span><a href="mailto:director@renewalfoodbank.org"> director@renewalfoodbank.org</a></p>
+      <p style="font-weight: bold;">Mailing Address:</p>
+      <p>12819 SE 38th St, PMB 241</p>
+      <p>Bellevue, WA 98006</p>
+        </div>
      </div>
     </div>
 
+    <div class="grid-item facebook-posts">   
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v11.0"></script>
+      <div class="fb-page" data-href="https://www.facebook.com/RenewalFoodBank" data-tabs="timeline" data-width="600" data-height="602" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>      
+    </div>
+
+    <div class="grid-item youtube-channel">
+    <div class="white-bar"></div>
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-88dfec76-98a5-4934-9f36-3d60b6d8d709"></div>
+  </div>
+</div>
+
+
+    
 
     <!-- Pop-up -->
     <div id="popup-container" class="popup-container popup-hide">
@@ -132,25 +160,30 @@
     <br><br><br><br>
 
     <footer>
-        <div class="footer-container">
-          <div class="social-media">
-            <a href="https://www.youtube.com/channel/UCW7UONilE2fZZ1XTY996dPw" target="_blank">
-              <img src="images/youtube-logo.png" alt="YouTube Logo" width="25px" class="animated-icon">
-            </a>
-            <a href="https://www.facebook.com/RenewalFoodBank" target="_blank">
-              <img src="images/facebook-logo.png" alt="Facebook Logo" width="15px" class="animated-icon">
-            </a>
-          </div>
-          <div class="additional-info">
-            <p class="non-profit">The Renewal Food Bank is a 501(c)(3) non-profit corporation.</p>
-            <p class="charities-program">The Renewal Food Bank of Bellevue is registered with Washington State's Charities Program as required by law.</p>
-            <p class="charities-info">Additional information is available by calling <a href="tel:800-332-4483">800-332-4483</a> or visiting <a href="http://www.sos.wa.gov/charities" target="_blank">www.sos.wa.gov/charities</a>.</p>
-          </div>
+      <div class="footer-container">   
+        <div class="social-media">
+          <a href="https://www.youtube.com/channel/UCW7UONilE2fZZ1XTY996dPw" target="_blank">
+            <img src="images/youtube-logo.png" alt="YouTube Logo" width="25px" class="animated-icon">
+          </a>
+          <a href="https://www.facebook.com/RenewalFoodBank" target="_blank">
+            <img src="images/facebook-logo.png" alt="Facebook Logo" width="15px" class="animated-icon">
+          </a>            
         </div>
-      </footer>
-  
+        
+        <div class="additional-info">
+          <p class="non-profit">The Renewal Food Bank is a 501(c)(3) non-profit corporation.</p>
+          <p class="charities-program">The Renewal Food Bank of Bellevue is registered with Washington State's Charities Program as required by law.</p>
+          <p class="charities-info">Additional information is available by calling <a href="tel:800-332-4483">800-332-4483</a> or visiting <a href="http://www.sos.wa.gov/charities" target="_blank">www.sos.wa.gov/charities</a>.</p>
+        </div>   
+        
+        <div class="reviews">
+          <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+          <div class="elfsight-app-b38a8cd1-8de2-4600-a271-aef92d1655a1"></div>
+        </div>
+        
+      </div>      
+    </footer> 
       
-
     <script src="js/script.js"></script>    
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

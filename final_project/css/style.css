@@ -3,43 +3,53 @@
   background-color: #000 !important;
 }
 
-
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #ccaa66;
-    color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ccaa66;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
   
 .button:hover {
-    background-color: #a08959;
-    color: white;
-  }
+  background-color: #a08959;
+  color: white;
+}
 
-* {
+* {  
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 footer {
   background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
+  padding: 20px;  
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
+  text-align: center;
+}
+
+.reviews {
+  position: absolute;
+  bottom: 1;
+  right: 0;
+  margin-top: 32px;
+  margin-right: 25px;
+  margin-bottom: 45px;
+  scale: 95%;
 }
 
 .social-media {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .social-media a {
@@ -64,63 +74,53 @@ footer {
   font-size: 14px;
 }
 
-  /* Pop-Up */
-  .popup-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    transition: opacity 0.5s ease-in-out;
-    overflow: hidden;
-  }
-  
-  .popup-content {
-    background-color: #ffffff;
-    padding: 20px;
-    max-width: 400px;
-    margin: 100px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    position: relative;
-  }
-  
-  .close-icon {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 24px;
-    cursor: pointer;
-    color: #999999;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .close-icon:hover {
-    color: #555555;
-  }
-  
-  .popup-hide {
-    opacity: 0;
-    pointer-events: none;
-  }
-  
-  /* Disable scrolling on the page */
-  body.popup-open {
-      overflow: hidden;
-  }
 
-  /* CSS to hide the navbar when scrolled down */
-.navbar-hide {
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
+/* Pop-Up */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+  
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 100px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
-/* CSS to show the navbar when scrolled up */
-.navbar-show {
-  transform: translateY(0);
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #999999;
+  transition: color 0.3s ease-in-out;
+}
+
+.close-icon:hover {
+  color: #555555;
+}
+
+.popup-hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Disable scrolling on the page */
+body.popup-open {
+  overflow: hidden;
 }
 
 /* Animations for footer */
@@ -151,12 +151,14 @@ footer {
 
 /* Header grid (header placement is the same for each page) */
 .page-header {  
-    grid-column: 1 / span 3;
-    grid-row: 1;
-    position: relative; 
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  position: relative; 
 }
 
-
+/* Highlighting text (used when buttons are clicked to highlight text on certain page) */
 .highlight {
   background-color: yellow;
 }
+
+
