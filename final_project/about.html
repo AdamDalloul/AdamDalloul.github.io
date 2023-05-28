@@ -5,11 +5,117 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-
     <link rel="stylesheet" href="css/style.css">    
+    <link rel="shortcut icon" type="x-icon" href="images/renewal_food_bank_logo_small.png"> 
   
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);;
+        grid-gap: 20px;        
+    }
+
+    .title {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .our-story,
+    .finances,
+    .partnerships {
+      padding: 20px;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .our-story h2,
+    .finances h2,
+    .partnerships h2 {
+      margin-bottom: 10px;
+    }
+
+    .our-story p,
+    .finances p {
+      margin-bottom: 20px;
+    }
+
+    .our-story-image img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .our-story {
+      grid-column: 1;
+      grid-row: 3;
+    }
+
+    .our-story-image {
+      grid-column: 2;
+      grid-row: 3;
+    }
+
+    .finances {
+      grid-column: 3;
+      grid-row: 3;
+    }
+
+    .partnerships {
+      grid-column: 2;
+      grid-row: 4;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }      
+
+   .logo-image-settings {
+      width: 80%;
+      text-align: center;
+    }
+
+    .bartell-drugs {
+      grid-column: 1;
+      grid-row: 4;
+      padding-top: 50px;
+      padding-left: 30px;
+    }
+
+    .food-lifeline {
+      grid-column: 3;
+      grid-row: 4;
+    }
+
+    .highland-church {
+      grid-column: 1;
+      grid-row: 4;
+      padding-top: 350px;
+    }
+
+    .jubilee-reach {
+      grid-column: 3;
+      grid-row: 4;
+      padding-top: 350px;
+    }
+
+    .microsoft {
+      grid-column: 1;
+      grid-row: 4;
+      padding-top: 750px;
+    }
+
+    .target {
+      grid-column: 3;
+      grid-row: 4;
+      padding-top: 850px;
+      width: 80%;
+      padding-left: 100px;      
+    }  
+
+    </style>
 </head>
 <body>
     <!--Bootstrap container for content and layout control-->
@@ -22,16 +128,135 @@
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="index.html" style="color: black;">Home</a></li>
                     <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
-                    <li clas="nav-item"><a class="nav-link" href="team.html" style="color: black;">Our Team</a></li>
-                    <li clas="nav-item"><a class="nav-link" href="give_help.html" style="color: black;">Give Help</a></li>
-                    <li clas="nav-item"><a class="nav-link" href="help.html" style="color: black;">Let Us Help</a></li>
-                    <li clas="nav-item"><a class="nav-link" href="contact.html" style="color: black;">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html" style="color: black;">Our Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="give_help.html" style="color: black;">Give Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="help.html" style="color: black;">Let Us Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: black;">Contact</a></li>
                 </ul>
             </ul>
         </div>
 </nav>
 
+<div class="grid-container">
+  <div class="grid-item page-header">
+      <img src="images/wheat.png" alt="Wheat" class="header-image-styling">
+      <h1 class="header-styling">About Us</h1>
+  </div>
 
+  <div class="title">
+    <h1>Serving Our King County Neighbors for Over 20 Years</h1>
+  </div>
+  
+  <div class="our-story">
+    <h2>Our Story</h2>
+    <p>Renewal Food Bank is an independent non-profit agency dedicated to providing food to the most vulnerable in our community regardless of gender, cultural or ethnic background, or religious belief. As a member of the Northwest Harvest and Food Lifeline hunger relief network, Renewal Food Bank has served more than 500,000 individuals since opening the doors in 1998. Each week nearly 300 families visit our centrally located center to choose from a variety of nutritious options donated by a very supportive community. Whether a client, donor, or volunteer, your involvement is welcome and critical to the success of Renewal Food Bank.</p>
+  </div>
+
+  <div class="our-story-image">
+    <img src="images/renewal_food_bank_3.png" alt="Renewal Food Bank">
+  </div>
+    
+  <div class="finances">
+    <h2>Finances</h2>
+    <p>Renewal Food Bank has a very modest operating budget (less than $100,000 a year) and yet we’ve been able to serve up to 300 families each week. Last year we had 36,870 people, that’s nearly 14,173 family visits! This is only possible because of the generosity of people like you. It literally takes a community of caring volunteers, businesses, churches, and service organizations to keep the food bank going. We welcome and sincerely appreciate every donation, whether you volunteer, drop off food, or help us meet our monthly bills with a financial donation. Thank you for your help.</p>
+  </div>
+
+
+  <div class="partnerships">
+    <h2>Our Partners</h2>    
+    <hr>
+    <p>Bartell Drugs – Bellevue Village</p>
+    <p>Bellevue Christian Reformed Church</p>
+    <p>Bellevue Christian School</p>
+    <p>Bellevue Presbyterian Church</p>
+    <p>Chestnut Hill Academy</p>
+    <p>City of Bellevue</p>
+    <p>Creekside Covenant Church</p>
+    <p>Eastgate Bible Fellowship</p>
+    <p>Food Lifeline</p>
+    <p>Highland Covenant Church</p>
+    <p>Interlake High School</p>
+    <p>Jubilee REACH</p>
+    <p>Lighthouse Christian Church</p>
+    <p>Macy’s- Bellevue Square</p>
+    <p>Microsoft</p>
+    <p>Newport Presbyterian Church</p>
+    <p>Northwest Harvest</p>
+    <p>Overlake Safeway</p>
+    <p>Panera Bread Factoria</p>
+    <p>QFC-Factoria</p>
+    <p>Sacred Heart School</p>
+    <p>Red Services</p>
+    <p>Town & Country Market at Lakemont</p>
+    <p>Target – Factoria</p>
+    <p>Westminster Chapel</p>    
+  </div>    
+
+
+  <div class="target">
+    <img src="images/target_logo.png" alt="Target" class="logo-image-settings">
+  </div>
+
+  <div class="microsoft">
+    <img src="images/microsoft_logo.png" alt="Microsoft" class="logo-image-settings">
+  </div>
+  
+  <div class="food-lifeline">
+    <img src="images/food-lifeline.png" alt="Food Lifeline" class="logo-image-settings">
+  </div>
+
+  <div class="highland-church">
+    <img src="images/highland_church.png" alt="Highland Covenant Church" class="logo-image-settings">
+  </div>
+
+  <div class="jubilee-reach">
+    <img src="images/jubilee-reach.png" alt="Jubilee Reach" class="logo-image-settings">
+  </div>
+
+  <div class="bartell-drugs">
+    <img src="images/bartell-drugs.png" alt="Bartell Drugs" class="logo-image-settings">
+  </div>
+</div>
+
+
+
+<!-- Pop-up -->
+<div id="popup-container" class="popup-container popup-hide">
+  <div class="popup-content">
+    <div id="close-icon" class="close-icon">&times;</div>   
+    <h2>Donations are Needed</h2>
+    <p>We need your help.</p>
+    <p>Consider donating the following:</p>
+    <p>Tuna, Peanut Butter, Ramen Noodles, Instant Meals, Canned Soup, Oatmeal, Pasta, and Cooking/Baking Supplies (ex. oil, flours, boxed kits, spices, etc.)</p>
+    <div style="text-align: center;">
+      <a class="button" href="https://www.paypal.com/donate?hosted_button_id=FBKAHFCMF2BEG" target="_blank">Donate</a>
+    </div>
+  </div>
+</div>
+
+<a class="button" href="https://www.paypal.com/donate?hosted_button_id=FBKAHFCMF2BEG" target="_blank" style="position: absolute; top: 6%; right: 20px; transform: translateY(-50%);">Donate</a>
+
+<br><br><br><br>
+
+<footer>
+  <div class="footer-container">
+    <div class="social-media">
+      <a href="https://www.youtube.com/channel/UCW7UONilE2fZZ1XTY996dPw" target="_blank">
+        <img src="images/youtube-logo.png" alt="YouTube Logo" width="25px" class="animated-icon">
+      </a>
+      <a href="https://www.facebook.com/RenewalFoodBank" target="_blank">
+        <img src="images/facebook-logo.png" alt="Facebook Logo" width="15px" class="animated-icon">
+      </a>
+    </div>
+    <div class="additional-info">
+      <p class="non-profit">The Renewal Food Bank is a 501(c)(3) non-profit corporation.</p>
+      <p class="charities-program">The Renewal Food Bank of Bellevue is registered with Washington State's Charities Program as required by law.</p>
+      <p class="charities-info">Additional information is available by calling <a href="tel:800-332-4483">800-332-4483</a> or visiting <a href="http://www.sos.wa.gov/charities" target="_blank">www.sos.wa.gov/charities</a>.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

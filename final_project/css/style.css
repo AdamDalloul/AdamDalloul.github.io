@@ -1,3 +1,9 @@
+.nav-link:hover {
+  color: white !important;
+  background-color: #000 !important;
+}
+
+
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -5,36 +11,152 @@
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    background-color: #FF8C00;
+    background-color: #ccaa66;
     color: #fff;
     border-radius: 4px;
     transition: background-color 0.3s ease;
   }
   
 .button:hover {
-    background-color: #7a4401;
+    background-color: #a08959;
     color: white;
   }
 
 * {
-    font-family: "adobe-garamond-pro", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 footer {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media {
+  margin-bottom: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.non-profit {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.charities-program {
+  margin-bottom: 5px;
+}
+
+.charities-info {
+  font-size: 14px;
+}
+
+  /* Pop-Up */
+  .popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .popup-content {
+    background-color: #ffffff;
     padding: 20px;
-    text-align: center;
+    max-width: 400px;
+    margin: 100px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .close-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #999999;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .close-icon:hover {
+    color: #555555;
+  }
+  
+  .popup-hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  /* Disable scrolling on the page */
+  body.popup-open {
+      overflow: hidden;
   }
 
-  .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /* CSS to hide the navbar when scrolled down */
+.navbar-hide {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
 
-  .social-media a {
-    display: inline-block;
-    margin: 0 10px;
-  }
+/* CSS to show the navbar when scrolled up */
+.navbar-show {
+  transform: translateY(0);
+}
+
+/* Animations for footer */
+.animated-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.animated-icon:hover {
+  transform: scale(1.2);
+}
+
+.header-styling {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5); /* Add background color with opacity */
+  padding: 10px 20px;
+  color: #000000; 
+  font-size: 60px;
+}
+
+.header-image-styling {
+  width: 1280px;        
+  display: block;
+}
+
+/* Header grid (header placement is the same for each page) */
+.page-header {  
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    position: relative; 
+}
+
+
+.highlight {
+  background-color: yellow;
+}
