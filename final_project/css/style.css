@@ -3,6 +3,15 @@
   background-color: #000 !important;
 }
 
+.main-donate-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  padding-right: 20px;
+  padding-top: 11px;
+}
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -14,6 +23,7 @@
   color: #fff;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  width: auto;
 }
   
 .button:hover {
@@ -145,7 +155,7 @@ body.popup-open {
 }
 
 .header-image-styling {
-  width: 1280px;        
+  width: 100%;        
   display: block;
 }
 
